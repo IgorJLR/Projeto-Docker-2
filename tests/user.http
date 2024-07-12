@@ -1,0 +1,37 @@
+POST http://localhost:3000/user HTTP/1.1
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "admin"
+}
+
+###
+
+PUT http://localhost:3000/user/1 HTTP/1.1
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "admin"
+}
+
+###
+
+POST http://localhost:3000/user HTTP/1.1
+Content-Type: application/json
+
+{
+  "username": "Lucas",
+  "password": "12345678"
+}
+
+###
+
+POST http://localhost:3000/login HTTP/1.1
+Content-Type: application/json
+
+{
+  "username": "Lucas",
+  "password": "12345678"
+}
